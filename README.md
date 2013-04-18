@@ -11,11 +11,12 @@ Ant provides a stdio-based password input but it doesn't work in Eclipse.
 This extension offers a Java swing dialog for passord input. To use it:
 
 1. Get the jar of this little project.
-2. Add it to the `path of the Ant Runtime Configuration in eclipse
-3. Use:
+2. Add it to the path of the Ant Runtime Configuration in eclipse
+3. In the ant script:
+```
 
     <input message="Please enter SSH password:" addproperty="ssh.password" >
       <handler classname="com.akolov.antpass.PasswordInputHandler" />
     </input>
-    
-That's it.
+```    
+
